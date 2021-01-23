@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;    
+}
+
+body {
+    background:red;
+}
+
+@media only screen and (min-width:300px) and (max-width:768px) {
+    body {
+        background: green;
+        font-size: 30px;
+        color: white;
+    }
+    .medium {
+        width:33%;
+    }
+    .small {
+        width:66%;
+    }
+    .large {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        background: blue;
+        font-size: 25px;
+        color:  white;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    body {
+        background: red;
+        font-size: 25px;
+        color: white;
+        display: inline;
+    }
+}
